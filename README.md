@@ -6,7 +6,10 @@ Phase 3 Final Project-
 * Karan Aditya
 
 ##The Problem
-As a job searcher I have to signup, configure and daily monitor several job listing sites, otherwise I risk missing job opportunities I qualify for.  If my situation, skillset, or requirements change I must update all the 
+As a job searcher I have to signup, configure and daily monitor several job listing sites, otherwise I risk missing job opportunities I qualify for.  If my situation, skillset, or requirements change I must update all the different sites.
+
+###The Solution
+DBC Jobs is a job-searching engine that will scrape different websites (i.e. "Indeed", "glassdoor"), accessing their information to curate a list of potential jobs in full-stack, rails-based web development in the SF Bay area.
 
 ##User Stories - MVP.  As a user I want to...
 * ...be able to see all my job listings at one site
@@ -21,4 +24,30 @@ As a job searcher I have to signup, configure and daily monitor several job list
 ##User Stories - Stretch.  As a user I want to...
 * ...have a boot jobs smart phone app I can check anywhere
 * ...I'd like to be able to respond to job postings from my phone
+* 
+
+
+Next we the teamates checked in with each other.  What are our priorities and heart felt goals for the project.
+###Goals for Boot Jobs
+1. Mike-- Make something that our friends can use by the end of this week
+2. Hank -- Stay mindful about how everyone is doing during this hard week.
+3.  Karan- Be professional, hold yourself accountable for being here on time, finishing tasks on time
+4.  4. James- Stretch our limits, push ourselves, have an MVP product by the end
+
+
+Strengths/Weaknesses
+1. Karan
+    -Strength: Back-end/rails-base
+    -Weakness: Front-end, atomic, sass
+2. Vega
+    - Strength: Front-end, CSS
+    - Weakness: Back-end, API consumption
+3. James
+    - Strength: Rails, front-end, prestige world-wide
+    - Weakness: Rabbit-holing
+4. Mike
+    - Strength: API Consumption, problem-solving using agile development
+    - Weakness: haven't used nokogiri
+
+What is DBC Jobs:
 
