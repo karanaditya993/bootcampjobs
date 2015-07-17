@@ -19,6 +19,6 @@ As a job searcher I have to signup, configure and daily monitor several job list
 * ...authenticate with GitHub since my peers and I all have Git Hub
 
 ##User Stories - Stretch.  As a user I want to...
-*...have a boot jobs smart phone app I can check anywhere
-*...I'd like to be able to respond to job postings from my phone
-*...
+* ...have a boot jobs smart phone app I can check anywhere
+* ...I'd like to be able to respond to job postings from my phone
+
