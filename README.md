@@ -89,4 +89,10 @@ Strengths/Weaknesses
 
 ------------------------------------------
 
+##Wireframes
+
+![home page](wireframe/home.png)
+
+![job-listing page](job_listing.png)
+![user-profile](profile_page.png)
 
