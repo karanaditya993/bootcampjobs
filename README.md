@@ -24,15 +24,19 @@ DBC Jobs is a job-searching engine that will scrape different websites (i.e. "In
 ##User Stories - Stretch.  As a user I want to...
 * ...have a boot jobs smart phone app I can check anywhere
 * ...I'd like to be able to respond to job postings from my phone
-* 
+* ...Integrate with existing DBC career software
+* ...track "Applied to", "Already taken"
+* ...Reviews of copmpanies, interview styles by DBC students and alumni
 
 
 Next we the teamates checked in with each other.  What are our priorities and heart felt goals for the project.
 ###Goals for Boot Jobs
 1. Mike-- Make something that our friends can use by the end of this week
 2. Hank -- Stay mindful about how everyone is doing during this hard week.
-3.  Karan- Be professional, hold yourself accountable for being here on time, finishing tasks on time
-4.  4. James- Stretch our limits, push ourselves, have an MVP product by the end
+3. Karan- Be professional, hold yourself accountable for being here on time, finishing tasks on time
+4. James- Stretch our limits, push ourselves, have an MVP product by the end
+ 
+We agreed to standup morning, noon, and night with each other.  We will pair program on everything.
 
 
 Strengths/Weaknesses
@@ -48,6 +52,36 @@ Strengths/Weaknesses
 4. Mike
     - Strength: API Consumption, problem-solving using agile development
     - Weakness: haven't used nokogiri
+    - 
+    - 
+##Thursday Schedule
 
-What is DBC Jobs:
+Thursday:
+------------------------------------------
+11:15AM - 11:45 AM
+- Discuss schedule and standup times...etc.
+------------------------------------------
+12:00 PM - 2:00 PM
+- Basic project idea (MVP) + lunch
+------------------------------------------
+2:00 PM - 2:30 PM
+- Git workflow
+------------------------------------------
+2:30 PM - 4:30 PM
+- User Stories
+- Wireframing
+------------------------------------------
+4:30PM - 4:45PM
+- Standup and check-in
+------------------------------------------
+5:00PM - 6:00PM
+-Research different apps
+------------------------------------------
+6:00PM
+-End of day standup
+------------------------------------------
+6:00PM - End of Day
+-Individual research
+------------------------------------------
+
 
