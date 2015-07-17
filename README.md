@@ -57,35 +57,35 @@ Strengths/Weaknesses
 ##Thursday Schedule
 
 * 11:15AM - 11:45 AM
-*  Discuss schedule and standup times...etc.
+ * Discuss schedule and standup times...etc.
 
 
 * 12:00 PM - 2:00 PM
-*  Basic project idea (MVP) + lunch
+ * Basic project idea (MVP) + lunch
 
 * 2:00 PM - 2:30 PM
-*  Git workflow
+ * Git workflow
 
 
 * 2:30 PM - 4:30 PM
-*  User Stories
-*  Wireframing
+ * User Stories
+ * Wireframing
 
 
 * 4:30PM - 4:45PM
-*  Standup and check-in
+ * Standup and check-in
 
 
 * 5:00PM - 6:00PM
-*  Research different apps
+ * Research different apps
 
 
 * 6:00PM
-*  End of day standup
+ * End of day standup
 
 
 * 6:00PM - End of Day
-*  Individual research
+ * Individual research
 
 ------------------------------------------
 
