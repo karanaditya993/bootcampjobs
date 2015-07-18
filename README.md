@@ -91,6 +91,23 @@ Strengths/Weaknesses
 
 ------------------------------------------
 
+##Friday, July 17, 2015
+
+* 11:00 AM- **Standup (1 min each)**
+ * James- Yesterday was good. K and I went through phase 1 nokogiri challenge, get a good feel for nokogiri. Did not write any code.  
+ * Getting nokogiri sauce down
+* Mike
+  * Wireframe for webpages
+  * Spoke with Marie about current DBC job sites
+* Henry
+  * Research on advanced CSS
+  * Sass and atomic
+  * Coderkit trial for advanced CSS
+ * Karan
+  * Ran through simple nokogiri scraping last night
+  * Thought about today's day plan
+  * Want to stay positive and on schedule, worked really well yesterday
+
 ##Wireframes
 This is our home page.  One button displays our standard list of DBC compatible jobs.  The other is a button to login with github.
 
@@ -98,5 +115,8 @@ This is our home page.  One button displays our standard list of DBC compatible 
 
 Here is our standard aggregate job listing.  Clicking on a listing 
 ![job-listing page](wireframe/job_listing.png)
+
+Initial design of our user's profile page
+
 ![user-profile](wireframe/profile_page.png)
 
