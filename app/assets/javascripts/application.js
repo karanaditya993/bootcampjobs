@@ -20,8 +20,7 @@ $(document).on("page:change", function() {
 
 var githubFadeOut = function(){
   $('#github-signin-button').on("click", function(event){
-    setTimeout(function(){ event }, 2000)
+    setTimeout(function(){ event }, 1000)
     $('#github-signin-button').fadeOut();
   });
 }
-
