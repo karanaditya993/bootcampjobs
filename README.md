@@ -93,6 +93,6 @@ Strengths/Weaknesses
 
 ![home page](wireframe/home.png)
 
-![job-listing page](job_listing.png)
-![user-profile](profile_page.png)
+![job-listing page](wireframe/job_listing.png)
+![user-profile](wireframe/profile_page.png)
 
