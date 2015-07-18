@@ -1,14 +1,27 @@
+<div id="container">
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Bootcampjobs</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+    <head>
+      <title>Bootcampjobs</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+    </head>
+  <div id="header" class="debug">
+  </div>
+  <div id="body" class="debug">
+    <body>
+      <%= yield %>
+    </body>
+  </div>
+  <div id="footer" class="debug">
+    <footer>
+    </footer>
+  </div>
 </html>
+</div>
+
+
+
+
+
