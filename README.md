@@ -17,16 +17,18 @@ DBC Jobs is a job-searching engine that will scrape different websites (i.e. "In
 * ...be able to add new skills to my profile and be shown additional jobs that I'm now qualified for.
 * ...have my job listing sorted most recent first
 * ...have jobs that are a better match for me appear before lessor matches
-* ...receive an email with my customized job listing every morning
+
 * ...have a "single page", simple, fast experience.* 
 * ...authenticate with GitHub since my peers and I all have Git Hub
 
 ##User Stories - Stretch.  As a user I want to...
-* ...have a boot jobs smart phone app I can check anywhere
-* ...I'd like to be able to respond to job postings from my phone
+* ...receive an email with my customized job listing every morning
+* ...Reviews of companies, interview styles by DBC students and alumni
+* ...check job postings via smartphone
+* ...respond to job postings from my phone
 * ...Integrate with existing DBC career software
 * ...track "Applied to", "Already taken"
-* ...Reviews of copmpanies, interview styles by DBC students and alumni
+
 
 
 Next we the teamates checked in with each other.  What are our priorities and heart felt goals for the project.
@@ -90,9 +92,11 @@ Strengths/Weaknesses
 ------------------------------------------
 
 ##Wireframes
+This is our home page.  One button displays our standard list of DBC compatible jobs.  The other is a button to login with github.
 
 ![home page](wireframe/home.png)
 
+Here is our standard aggregate job listing.  Clicking on a listing 
 ![job-listing page](wireframe/job_listing.png)
 ![user-profile](wireframe/profile_page.png)
 
