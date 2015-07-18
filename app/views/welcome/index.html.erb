@@ -1,4 +1,5 @@
 <%if user_signed_in? %>
+  <p class="welcome-message">Welcome, <%= @user.name %></p>
   <p class="logout-message">Click to Logout</p>
   <%= link_to(image_tag("sign-out.png", :width => 180), destroy_user_session_path, method: :delete, id: "signout-button" )%></br>
 <%end%>
