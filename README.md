@@ -103,20 +103,60 @@ Strengths/Weaknesses
   * Research on advanced CSS
   * Sass and atomic
   * Coderkit trial for advanced CSS
- * Karan
+* Karan
   * Ran through simple nokogiri scraping last night
   * Thought about today's day plan
   * Want to stay positive and on schedule, worked really well yesterday
 
-##Wireframes
-This is our home page.  One button displays our standard list of DBC compatible jobs.  The other is a button to login with github.
+##Wireframes by Mike
+###Home page.  
+* One button displays our standard list of DBC compatible jobs.  
+* The other is a button to login with github.
 
 ![home page](wireframe/home.png)
 
-Here is our standard aggregate job listing.  Clicking on a listing 
+###Aggregate job listing.  Clicking on a listing 
 ![job-listing page](wireframe/job_listing.png)
 
-Initial design of our user's profile page
+###Initial design of our user's profile page
 
 ![user-profile](wireframe/profile_page.png)
+
+###DBC Jobs  Daily Schedule  Friday July 17, 2015
+
+* 11:00 AM - 11:15 AM
+ * Recap of design
+
+* 11:15 AM - 12:30 PM
+ * Nokogiri research, wireframe wrap-up
+
+
+* 12:30 PM - 1:00 PM
+ * Lunch
+
+* 1:00 PM - 1:10 PM (2 min each)
+ * Check-in
+
+
+* 1:15 PM - 2:30 PM
+ * Basic schema design
+
+
+* 2:30 PM - 2:45 PM
+ * Break
+
+
+* 2:45 PM - 5:00 PM
+ * Nokogiri
+ * Migrations and models/Heroku deploy
+ * Git workflow
+
+
+* 5:00 PM - 6:00 PM
+ *Engineering Empathy
+
+
+* 6:00 PM
+ * 360 degree feedback
+ * Prep
 
