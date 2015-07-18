@@ -17,16 +17,18 @@ DBC Jobs is a job-searching engine that will scrape different websites (i.e. "In
 * ...be able to add new skills to my profile and be shown additional jobs that I'm now qualified for.
 * ...have my job listing sorted most recent first
 * ...have jobs that are a better match for me appear before lessor matches
-* ...receive an email with my customized job listing every morning
+
 * ...have a "single page", simple, fast experience.* 
 * ...authenticate with GitHub since my peers and I all have Git Hub
 
 ##User Stories - Stretch.  As a user I want to...
-* ...have a boot jobs smart phone app I can check anywhere
-* ...I'd like to be able to respond to job postings from my phone
+* ...receive an email with my customized job listing every morning
+* ...Reviews of companies, interview styles by DBC students and alumni
+* ...check job postings via smartphone
+* ...respond to job postings from my phone
 * ...Integrate with existing DBC career software
 * ...track "Applied to", "Already taken"
-* ...Reviews of copmpanies, interview styles by DBC students and alumni
+
 
 
 Next we the teamates checked in with each other.  What are our priorities and heart felt goals for the project.
@@ -89,10 +91,79 @@ Strengths/Weaknesses
 
 ------------------------------------------
 
-##Wireframes
+##Friday, July 17, 2015
+
+* 11:00 AM- **Standup (1 min each)**
+ * James- Yesterday was good. K and I went through phase 1 nokogiri challenge, get a good feel for nokogiri. Did not write any code.  
+ * Getting nokogiri sauce down
+* Mike
+  * Wireframe for webpages
+  * Spoke with Marie about current DBC job sites
+* Henry
+  * Research on advanced CSS
+  * Sass and atomic
+  * Coderkit trial for advanced CSS
+* Karan
+  * Ran through simple nokogiri scraping last night
+  * Thought about today's day plan
+  * Want to stay positive and on schedule, worked really well yesterday
+
+##Wireframes by Mike
+###Home page.  
+* One button displays our standard list of DBC compatible jobs.  
+* The other is a button to login with github.
 
 ![home page](wireframe/home.png)
 
+###Aggregate job listing.  Clicking on a listing 
 ![job-listing page](wireframe/job_listing.png)
+
+###Initial design of our user's profile page
+
 ![user-profile](wireframe/profile_page.png)
 
+###DBC Jobs  Daily Schedule  Friday July 17, 2015
+
+* 11:00 AM - 11:15 AM
+ * Recap of design
+
+* 11:15 AM - 12:30 PM
+ * Nokogiri research, wireframe wrap-up
+
+
+* 12:30 PM - 1:00 PM
+ * Lunch
+
+* 1:00 PM - 1:10 PM (2 min each)
+ * Check-in
+
+
+* 1:15 PM - 2:30 PM
+ * Basic schema design
+
+
+* 2:30 PM - 2:45 PM
+ * Break
+
+
+* 2:45 PM - 5:00 PM
+ * Nokogiri
+ * Migrations and models/Heroku deploy
+ * Git workflow
+
+
+* 5:00 PM - 6:00 PM
+ *Engineering Empathy
+
+
+* 6:00 PM
+ * 360 degree feedback
+ * Prep
+
+##Kanban Board
+This is how we start our project.  
+ 
+![Here is the kanban](BootJobs-Kanban.png).
+
+[Here is the link on Trello](https://trello.com/b/sYYztdxH/bootjobs)
+, if you have access to it. 
