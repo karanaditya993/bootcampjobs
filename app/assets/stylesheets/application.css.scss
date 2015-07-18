@@ -68,26 +68,17 @@
   background-size: 100%;
 }
 
-.github-login {
-  float: right;
-  margin-right: 10%;
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
-}
-.logout-message {
-  float: right;
-  margin-right: 10%;
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
-}
 .welcome-message {
-  margin: auto;
+  text-align: center;
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 2.0em;
   color: white;
+}
+
+.gravatar {
+  border-radius: 50%;
+  width: 6em;
 }
 
 
