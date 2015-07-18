@@ -1,4 +1,4 @@
 <%if user_signed_in? %>
-  <p class="welcome-message">Welcome, <%= @user.name %></p>
-  <%= link_to(image_tag(@user.gravatar, :width => 180, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%></br>
+  <div class="welcome-message">Welcome, <%= @user.name %></div>
+  <%= link_to(image_tag(@user.gravatar, :width => 180, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
 <%end%>
