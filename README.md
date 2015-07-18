@@ -160,3 +160,10 @@ Strengths/Weaknesses
  * 360 degree feedback
  * Prep
 
+##Kanban Board
+This is how we start our project.  
+ 
+![Here is the kanban](BootJobs-Kanban.png).
+
+[Here is the link on Trello](https://trello.com/b/sYYztdxH/bootjobs)
+, if you have access to it. 
