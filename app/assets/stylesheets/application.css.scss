@@ -23,8 +23,9 @@ body{
   margin:0;
   padding:0;
   height:100%;
-  background-image: url("http://di9.in/wallpapers/waterfall_in_jungle-1920x1200.jpg");
+  /*background-image: url("http://di9.in/wallpapers/waterfall_in_jungle-1920x1200.jpg");*/
 }
+
 
 #header{
   top: 0;
@@ -37,10 +38,10 @@ body{
 }
 
 #footer {
-    position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
-  height: 12.5%;
+  height: 5%;
   border-top: 2px black solid;
   overflow: hidden;
   background-color: #00A300;
@@ -87,6 +88,32 @@ body{
   -webkit-filter: drop-shadow(8px 8px 8px #222);
   filter:         drop-shadow(8px 8px 8px #222);
 }
+
+#not-signed-in-jobs {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+#not-signed-in-jobs ul{
+  list-style-type: none;
+  text-align: center;
+}
+#signed-in-jobs {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+#signed-in-jobs ul{
+  list-style-type: none;
+  text-align: center;
+}
+#not-signed-in-jobs h1{
+  text-align: center;
+}
+#signed-in-jobs h1{
+  text-align: center;
+}
+
 /* begin
 body {
    margin:0;
