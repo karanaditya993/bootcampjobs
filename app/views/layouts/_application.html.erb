@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootcampjobs</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar-wrapper container">
+        <ul class="left">
+          <li>
+            <%= link_to(image_tag("bootcamp.png", :width => 65, :class => "home-button"), root_path) %>
+          </li>
+        </ul>
+        <ul class="right">
+        </ul>
+      </div>
+    </nav>
+    <%= yield %>
+    <div id="footer" class="debug">
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>
