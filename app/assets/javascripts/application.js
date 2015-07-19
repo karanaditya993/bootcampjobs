@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).on("page:change", function() {
+  githubFadeOut();
+});
+
+var githubFadeOut = function(){
+  $('#github-signin-button').on("click", function(event){
+    setTimeout(function(){ event }, 1000)
+    $('#github-signin-button').fadeOut();
+  });
+}

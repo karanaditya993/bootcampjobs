@@ -1,4 +1,4 @@
-<h1>Welcome to the index page</h1>
 <%if user_signed_in? %>
-  <p><%= link_to "Logout", destroy_user_session_path, method: :delete %></p>
+  <div class="welcome-message">Welcome, <%= @user.name %></div>
+  <%= link_to(image_tag(@user.gravatar, :width => 180, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
 <%end%>
