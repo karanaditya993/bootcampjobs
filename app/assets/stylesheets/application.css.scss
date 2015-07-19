@@ -23,7 +23,7 @@ body{
   margin:0;
   padding:0;
   height:100%;
-  background-image: url("http://cdn.desktopwallpapers4.me/wallpapers/nature/1920x1200/2/18327-small-jungle-waterfall-1920x1200-nature-wallpaper.jpg");
+  background-image: url("http://di9.in/wallpapers/waterfall_in_jungle-1920x1200.jpg");
 }
 
 #header{
@@ -83,7 +83,10 @@ body{
   filter:         drop-shadow(8px 8px 8px #222);
 }
 
-
+.home-button:hover {
+  -webkit-filter: drop-shadow(8px 8px 8px #222);
+  filter:         drop-shadow(8px 8px 8px #222);
+}
 /* begin
 body {
    margin:0;

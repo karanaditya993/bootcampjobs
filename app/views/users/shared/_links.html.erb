@@ -1,6 +1,6 @@
 <% if devise_mapping.omniauthable? %>
   <% resource_class.omniauth_providers.each do |provider| %>
-    <%= link_to(image_tag("Octocat.png", :width => 110), omniauth_authorize_path(resource_name, provider), id: "github-signin-button", class: "debug") %><br />
+    <%= link_to(image_tag("github.png", :width => 110), omniauth_authorize_path(resource_name, provider), id: "github-signin-button", class: "debug") %><br />
   <% end %>
 <% end %>
 <!-- "Sign in with #{provider.to_s.titleize}" -->
