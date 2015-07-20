@@ -1,0 +1,7 @@
+<%= form_for([current_user, @skill]) do |f| %>
+  <%= f.text_field :title %>
+  <%= f.label :title %>
+  <%= f.submit "Add Skill!"%>
+<% end %>
+
+<p>Or pick from these preselected skills</p>
