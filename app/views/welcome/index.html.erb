@@ -1,13 +1,21 @@
-<div id="home-page">
-  <%if user_signed_in? %>
-    <div class="welcome-message">Welcome, <%= @user.name %></div>
-    <%= link_to(image_tag(@user.gravatar, :width => 180, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
-  <%end%>
-</div>
-<p><%= link_to "Customize Your Profile!", new_user_skill_path(@user.id)%></p>
-<p><%= link_to "See Your Skills", user_skills_path(@user.id) %></p>
+<section id="home-page">
+  <div class="bootjob-button">
+  <span>
+    <h1>
+    </h1>
+  </span>
+  </div>
+  <div class="search-field">
+    <div class="input-field">
+      <%= form_tag(jobs_path, :method => 'get', id: "search") do %>
+        <%= text_field_tag :search, params[:search], placeholder: 'Search Jobs', style: "color:white;" %>
+        <%= submit_tag "", :id => 'Scomit', :style => "display: none;" %>
+      <% end %>
+    </div>
+  </div>
+</section>
 
-<%= form_tag(jobs_path, :method => 'get', id: "search-form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: 'Search Jobs' %>
-  <%= submit_tag "Search"%>
-<% end %>
+<!--
+        <p><%#= link_to "Customize Your Profile!", new_user_skill_path(@user.id)%></p>
+        <p><%#= link_to "See Your Skills", user_skills_path(@user.id) %></p>
+ -->

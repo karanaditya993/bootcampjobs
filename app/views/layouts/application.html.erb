@@ -5,15 +5,25 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" class="">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <%= render 'layouts/navbar' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+</html>
+
+
+<!--
     <div id="container">
       <div id="header" class="debug">
         <%= link_to(image_tag("bootcamp.png", :width => 100, :class => "home-button"), root_path) %>
       </div>
       <div class="debug">
-        <%= yield %>
       </div>
       <div id="footer" class="debug">
         <footer>
@@ -21,10 +31,6 @@
         </footer>
       </div>
     </div>
-  </body>
-</html>
-
-
-
+ -->
 
 

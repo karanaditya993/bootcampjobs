@@ -1,0 +1,12 @@
+<nav>
+  <div class="nav-wrapper">
+    <%if user_signed_in? %>
+      <div class="welcome-message">Welcome, <%= current_user.name %></div>
+    <%end%>
+    <%= link_to(image_tag("bootcamp.png", :width => 60, class: "home-button"), root_path) %>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <%= link_to(image_tag(current_user.gravatar, :width => 50, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
+    </ul>
+  </div>
+</nav>
+
