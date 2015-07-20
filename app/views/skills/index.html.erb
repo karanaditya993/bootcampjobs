@@ -1,3 +1,7 @@
-<% @skills.each do |skill| %>
-  <%= skill.title %>
+<% if @skills %>
+  <% @skills.each do |skill| %>
+    <%= skill.title %>
+  <% end %>
+<% else %>
+  <p><%= @skills.errors.full_messages %></p>
 <% end %>

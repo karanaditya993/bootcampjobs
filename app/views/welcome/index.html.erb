@@ -4,4 +4,5 @@
     <%= link_to(image_tag(@user.gravatar, :width => 180, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
   <%end%>
 </div>
-<%= link_to "Customize Your Profile!", new_user_skill_path(@user.id)%>
+<p><%= link_to "Customize Your Profile!", new_user_skill_path(@user.id)%></p>
+<p><%= link_to "See Your Skills", user_skills_path(@user.id) %></p>
