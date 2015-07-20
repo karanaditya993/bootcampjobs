@@ -1,23 +1,5 @@
-<% if !user_signed_in? %>
-  <div id="not-signed-in-jobs">
-    <h1>Jobs Index Page</h1>
-    <ul>
-      <% if @jobs %>
-        <% @jobs.each do |job| %>
-          <li><%= job.title %></li></br>
-        <% end %>
-      <% end %>
-    </ul>
-  </div>
+<% if @jobs.present? && !params[:search].empty?%>
+  <%= render @jobs %>
 <% else %>
-  <div id="signed-in-jobs">
-    <h1>Jobs Index Page</h1>
-    <ul>
-      <% if @jobs %>
-        <% @jobs.each do |job| %>
-          <li><%= link_to "#{job.title}", job_path(job.id) %></li></br>
-        <% end %>
-      <% end %>
-    </ul>
-  </div>
+  <p>There are no jobs containing the term(s) <%= params[:search] %>.</p>
 <% end %>
