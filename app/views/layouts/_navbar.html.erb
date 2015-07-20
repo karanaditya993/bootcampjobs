@@ -2,11 +2,15 @@
   <div class="nav-wrapper">
     <%if user_signed_in? %>
       <div class="welcome-message">Welcome, <%= current_user.name %></div>
+      <%= link_to(image_tag("bootcamp.png", :width => 60, class: "home-button"), root_path) %>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <%= link_to(image_tag(current_user.gravatar, :width => 50, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
+      </ul>
+    <% else %>
+      <% resource_class.omniauth_providers.each do |provider| %>
+        <%= link_to(image_tag("github.png", :width => 110), omniauth_authorize_path(resource_name, provider), id: "github-signin-button", class: "debug") %><br />
+      <% end %>
     <%end%>
-    <%= link_to(image_tag("bootcamp.png", :width => 60, class: "home-button"), root_path) %>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <%= link_to(image_tag(current_user.gravatar, :width => 50, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
-    </ul>
   </div>
 </nav>
 
