@@ -7,9 +7,7 @@
         <%= link_to(image_tag(current_user.gravatar, :width => 50, :class => "gravatar"), destroy_user_session_path, method: :delete, id: "signout-button" )%>
       </ul>
     <% else %>
-      <% resource_class.omniauth_providers.each do |provider| %>
-        <%= link_to(image_tag("github.png", :width => 110), omniauth_authorize_path(resource_name, provider), id: "github-signin-button", class: "debug") %><br />
-      <% end %>
+     <%= render 'users/shared/links' %>
     <%end%>
   </div>
 </nav>

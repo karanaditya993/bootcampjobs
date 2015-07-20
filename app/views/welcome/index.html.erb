@@ -9,7 +9,7 @@
     <div class="input-field">
       <%= form_tag(jobs_path, :method => 'get', id: "search") do %>
         <%= text_field_tag :search, params[:search], placeholder: 'Search Jobs', style: "color:white;" %>
-        <%= submit_tag "", :id => 'Scomit', :style => "display: none;" %>
+        <%= submit_tag "", :id => 'Submit', :style => "display: none;" %>
       <% end %>
     </div>
   </div>

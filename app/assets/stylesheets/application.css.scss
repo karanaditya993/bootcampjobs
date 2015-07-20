@@ -17,18 +17,27 @@ body {
   display: flex;
   flex-direction: column;
 }
+/*
+#content_wrapper {
+  margin: 0 auto;
+}
+*/
+
 #home-page {
-  background: url(hires_waterfall.jpg) no-repeat bottom center;
+  background: url(hires_waterfall.jpg) no-repeat bottom;
   padding: 400px;
-  margin-top: -100px;
-}
-.page-footer {
-  flex: 1 0 auto;
-  height: 100px;
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  background-position: fixed;
 }
+
+.page-footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
+}
+
 footer{
   background-color: #4D8A48 !important;
 }
@@ -48,7 +57,20 @@ footer{
 }
 
 .nav-wrapper {
+  position: fixed;
   background-color: #689D29;
+}
+
+#github-signin-button {
+  float: right;
+}
+
+.waves-effect.waves-light.btn {
+  float: right;
+}
+
+#search {
+  float: right;
 }
 /*
 .bootjob-button {
@@ -57,21 +79,3 @@ footer{
   background-color: white;
 }
 */
-.search-button {
-  float: right;
-  margin: 10px;
-}
-.search-field {
-  width: 25%;
-  float: right;
-  margin-right: -350px;
-  margin-top: 150px;
-}
-#submit-search {
-  display: block;
-}
-
-#search {
-  display: absolute;
-  padding: 10px;
-}
