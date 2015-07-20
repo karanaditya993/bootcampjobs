@@ -13,135 +13,69 @@
  *= require_tree .
  *= require_self
  */
-
-/*.debug{
-  border: 1px red solid;
-}*/
-
-body{
-  margin:0;
-  padding:0;
-  height:100%;
-  /*background-image: url("http://di9.in/wallpapers/waterfall_in_jungle-1920x1200.jpg");*/
+body {
+  display: flex;
+  flex-direction: column;
 }
+/*
+#content_wrapper {
+  margin: 0 auto;
+}
+*/
 
-
-#header{
-  top: 0;
-  border-bottom: 2px black solid;
+#home-page {
+  background: url(hires_waterfall.jpg) no-repeat bottom;
+  padding: 400px;
   width: 100%;
-  height: 100px;
-  background-color: #47B547;
-  /* background-color: black; */
-  overflow: hidden;
+  background-position: fixed;
 }
 
-#footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  height: 5%;
-  border-top: 2px black solid;
-  overflow: hidden;
-  background-color: #00A300;
+.page-footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
 }
 
-#github-signin-button {
-  top: 0;
-  right: 0;
-  position: absolute;
+footer{
+  background-color: #4D8A48 !important;
 }
 
-#github-signin-button:hover {
-  -webkit-filter: drop-shadow(8px 8px 8px #222);
-  filter:         drop-shadow(8px 8px 8px #222);
-}
-
-#signout-button {
-  right: 10;
-  margin-top: -100px;
-}
-
-.welcome-message {
-  text-align: center;
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.0em;
-  color: white;
+.home-button{
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
 .gravatar {
-  border-radius: 50%;
-  width: 6em;
+  margin-top: 8px;
+}
+
+.welcome-message {
   float: right;
-  margin-right: 10px;
-  margin-top: -100px;
+  margin-right: 8px;
 }
 
-.gravatar:hover {
-  -webkit-filter: drop-shadow(8px 8px 8px #222);
-  filter:         drop-shadow(8px 8px 8px #222);
+.nav-wrapper {
+  position: fixed;
+  background-color: #689D29;
 }
 
-.home-button:hover {
-  -webkit-filter: drop-shadow(8px 8px 8px #222);
-  filter:         drop-shadow(8px 8px 8px #222);
+#github-signin-button {
+  float: right;
 }
 
-#not-signed-in-jobs {
-  padding: 10px;
-  padding-bottom: 20px;
+.waves-effect.waves-light.btn {
+  float: right;
 }
 
-#not-signed-in-jobs ul{
-  list-style-type: none;
-  text-align: center;
+#search {
+  float: right;
 }
-#signed-in-jobs {
-  padding: 10px;
-  padding-bottom: 20px;
+/*
+.bootjob-button {
+  float: left;
+  margin-left: -350px;
+  background-color: white;
 }
-
-#signed-in-jobs ul{
-  list-style-type: none;
-  text-align: center;
-}
-
-#not-signed-in-jobs h1{
-  text-align: center;
-}
-
-#signed-in-jobs {
-
-}
-
-#signed-in-jobs h1{
-  text-align: center;
-}
-
-/* begin
-body {
-   margin:0;
-   padding:0;
-   height:100%;
-}
-#container {
-   min-height:100%;
-   position:relative;
-}
-#header {
-   background:#ff0;
-   padding:10px;
-}
-#body {
-   padding:10px;
-   padding-bottom:60px;
-}
-#footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;
-   background:#6cf;
-}
-end */
+*/
