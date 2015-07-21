@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
   <% if @jobs.present? && !params[:search].empty?%>
-    <%= render @jobs %>
+    <%= render partial: 'job', locals: {jobs: @jobs} %>
   <% else %>
     <p>There are no jobs containing the term(s) <%= params[:search] %>.</p>
   <% end %>

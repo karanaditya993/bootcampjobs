@@ -2,10 +2,13 @@ class JobsController < ApplicationController
   def index
     if !user_signed_in?
       @jobs = Job.all
+    elsif params[:search]
+      @jobs = Job.search(params[:search]).order('created_at DESC')
+      p "*" * 100
+      p @jobs
+      p "*" * 100
     else
-      if params[:search]
-        @jobs = Job.search(params[:search]).order('created_at DESC')
-      end
+      puts "NOOOO"
     end
   end
 

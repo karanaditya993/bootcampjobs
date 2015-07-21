@@ -1,6 +1,12 @@
 <%= @jobs.each do |job| %>
   <div id="job-description">
-    <h1><%= job.title %></h1>
+    <p>
+      <a href="<%= job.link_to_original %>">Link To Original</a>
+    </p>
+  </div>
+<% end %>
+
+    <!-- <h1><%= job.title %></h1>
     <h2>Location</h2>
     <p><%= job.location %></p>
 
@@ -9,11 +15,5 @@
 
     <h2>Company Name</h2>
     <p><%= job.company_name %></p>
-
-    <p>
-      <a href="<%= job.link_to_original %>">Link To Original</a>
-    </p>
-
-    <p>Submited <%= time_ago_in_words(job.posted_date)%> ago</p>
-  </div>
-<% end %>
+ -->
+<!-- <p>Submited <%= time_ago_in_words(job.posted_date)%> ago</p> -->
