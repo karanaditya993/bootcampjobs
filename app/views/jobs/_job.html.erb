@@ -1,6 +1,6 @@
-<%= @jobs.each do |job| %>
-  <div id="job-description">
-    <h1><%= job.title %></h1>
+<div id="job-description">
+    <% @jobs.each do |job| %>
+    <!--     <h1><%= job.title %></h1>
     <h2>Location</h2>
     <p><%= job.location %></p>
 
@@ -9,10 +9,10 @@
 
     <h2>Company Name</h2>
     <p><%= job.company_name %></p>
-
+    -->
     <p>
-      <a href="<%= job.link_to_original %>">Link To Original</a>
+      <a href="<%= job.link_to_original %>"><%= job.title %></a>
     </p>
+    <% end %>
 
-  </div>
-<% end %>
+</div>

@@ -1,11 +1,15 @@
 <% if user_signed_in? %>
   <% if @jobs.present? && !params[:search].empty?%>
-    <%= render @jobs %>
+    <%= render partial: 'job', locals: {jobs: @jobs} %>
   <% else %>
     <p>There are no jobs containing the term(s) <%= params[:search] %>.</p>
   <% end %>
 <% else %>
   <% @jobs.each do |job| %>
-    <li><%= job.title %></li>
+  <div class="jobs-all">
+    <ul>
+      <li><a href="<%= job.link_to_original %>"><%=  job.title %></a></li>
+    </ul>
+  </div>
   <% end %>
 <% end %>
