@@ -6,6 +6,10 @@
   <% end %>
 <% else %>
   <% @jobs.each do |job| %>
-    <li><%= job.title %></li>
+  <div class="jobs-all">
+    <ul>
+      <li><a href="<%= job.link_to_original %>"><%=  job.title %></a></li>
+    </ul>
+  </div>
   <% end %>
 <% end %>
