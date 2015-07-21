@@ -15,7 +15,6 @@ Skill.create(title: "CSS")
 # require 'open-uri'
 
 
-
 #************************************************************************************************************
 # SCRAPE JOB LISTINGS.
 # for each: location, job search string, and website
@@ -30,7 +29,7 @@ def scrape_job_listings
     queries.each do |query|
       scrape_indeed(query, location)
       scrape_github(query, location)
-      scrape_glassdoor(query,location)
+      scrape_glassdoor(query, location)
     end
   end
 end

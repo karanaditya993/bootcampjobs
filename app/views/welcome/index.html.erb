@@ -13,9 +13,9 @@
       <% end %>
     </div>
   </div>
+  <div class="skills-button">
+    <p><%= link_to("See Your Skills", user_skills_path(@user.id), class: "waves-effect waves-light btn") %></p>
+    <p><%= link_to("Customize Your Profile!", new_user_skill_path(@user.id), class: "waves-effect waves-light btn") %></p>
+  </div>
 </section>
 
-<!--
-        <p><%#= link_to "Customize Your Profile!", new_user_skill_path(@user.id)%></p>
-        <p><%#= link_to "See Your Skills", user_skills_path(@user.id) %></p>
- -->
