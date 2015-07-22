@@ -38,11 +38,11 @@ def scrape_github(query, location)
     puts "Location: #{location}"
     puts "Posted Date: #{posted_date}"
 
-    # Job.create(:title => title,
-    #            :location => location,
-    #            :description => description,
-    #            :company_name => company_name,
-    #            :link_to_original => link_to_original,
-    #            :posted_date => posted_date)
+    Job.create(:title => title,
+               :location => location,
+               :description => description,
+               :company_name => company_name,
+               :link_to_original => link_to_original,
+               :posted_date => posted_date)
   end
 end

@@ -1,3 +1,7 @@
+require_relative 'scrape_github.rb'
+require_relative 'scrape_glassdoor.rb'
+require_relative 'scrape_indeed.rb'
+
 def scrape_indeed(query, location)
   base_url = "http://www.indeed.com"
 

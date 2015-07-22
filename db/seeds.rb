@@ -1,6 +1,6 @@
 require_relative 'scrape_github.rb'
-require_relative 'glassdoor_github.rb'
-require_relative 'indeed_github.rb'
+require_relative 'scrape_glassdoor.rb'
+require_relative 'scrape_indeed.rb'
 
 
 Skill.create(title: "Ruby")
@@ -29,7 +29,7 @@ def scrape_job_listings
     queries.each do |query|
       scrape_indeed(query, location)
       scrape_github(query, location)
-      scrape_glassdoor(query, location)
+    #  scrape_glassdoor(query, location)
     end
   end
 end
