@@ -24,6 +24,8 @@ class SkillsController < ApplicationController
   end
 
   def destroy
+    @skill = Skill.find(params[:id])
+    @skill.destroy
   end
 
   private
@@ -33,5 +35,5 @@ class SkillsController < ApplicationController
 
 end
 
-@skills = Skill.all
+#@skills = Skill.all
 #is an array of skills

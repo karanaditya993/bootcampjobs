@@ -1,6 +1,6 @@
 <footer class="page-footer">
   <div class="footer-text">
-    We search all the job sites so you don't have to.
+    <h4><%= link_to "Sign out", destroy_user_session_path, method: :delete, id: "signout-button" %></h4>
   </div>
   <% if !user_signed_in? %>
     <%= render 'users/shared/links' %>
