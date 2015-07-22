@@ -41,6 +41,13 @@ def scrape_glassdoor(query, location)
     puts description
     puts "*" * 50 + "Link to original"
     puts link_to_original
+
+    Job.create(:title => title,
+               :location => location,
+               :description => description,
+               :company_name => company_name,
+               :link_to_original => link_to_original,
+               :posted_date => posted_date)
   end
 end
 
