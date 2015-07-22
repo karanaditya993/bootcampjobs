@@ -1,37 +1,70 @@
-<div class="container">
-    <div class="col s12">
-        <div class="row">
-                <%#=# form_tag(jobs_path, :method => 'get', id: "search") do %>
-                    <%#= text_field_tag :search, params[:search], placeholder: 'Search Jobs', style: "color:black;" %>
-                    <%#= submit_tag "", :id => 'Submit', :style => "display: none;" %>
-                <%# end %>
-                <%# if @jobs.present? && !params[:search].empty?%>
-                    <%#= render partial: 'job', locals: {jobs: @jobs} %>
-                <%# else %>
-                   <!-- <p>There are no jobs containing the term(s) <%#= params[:search] %>.</p> -->
-                <%# end %>
-            <div class="input-field col s12">
-            </div>
-        </div>
-        <% @jobs.each do |job| %>
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title"><%= job.title %></span>
-                <span class="card-title-left"><h5><%= job.company_name %></h5></span>
-                <hr>
-                <br/>
-                <div>
-                    <p>
-                        <%= job.description %>
-                    </p>
-                </div>
-            </div>
-            <div class="card-action">
-                <a href="<%= job.link_to_original %>">Link To Original Site</a>
-                <h6><%= job.location %></h6>
-                <i class="fa fa-star"></i>
-            </div>
-        </div>
-<%end%>
+<!--<div class="container">-->
+<!--<div class="col s12">-->
+<!--<div class="row">-->
+<!--<%#=# form_tag(jobs_path, :method => 'get', id: "search") do %>-->
+<!--<%#= text_field_tag :search, params[:search], placeholder: 'Search Jobs', style: "color:black;" %>-->
+<!--<%#= submit_tag "", :id => 'Submit', :style => "display: none;" %>-->
+<!--<%# end %>-->
+<!--<%# if @jobs.present? && !params[:search].empty?%>-->
+<!--<%#= render partial: 'job', locals: {jobs: @jobs} %>-->
+<!--<%# else %>-->
+<!--&lt;!&ndash; <p>There are no jobs containing the term(s) <%#= params[:search] %>.</p> &ndash;&gt;-->
+<!--<%# end %>-->
+<!--<div class="input-field col s12">-->
+<!--</div>-->
+<!--</div>-->
+<!--<%# @jobs.each do |job| %>-->
+<!--<div class="card blue-grey darken-1">-->
+<!--<div class="card-content white-text">-->
+<!--<span class="card-title"><%#= job.title %></span>-->
+<!--<span class="card-title-left"><h5><%#= job.company_name %></h5></span>-->
+<!--<hr>-->
+<!--<br/>-->
+<!--<div>-->
+<!--<p>-->
+<!--<%#= job.description %>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="<%#= job.link_to_original %>">Link To Original Site</a>-->
+<!--<h6><%#= job.location %></h6>-->
+<!--<i class="fa fa-star"></i>-->
+<!--</div>-->
+<!--</div>-->
+<!--<%#end%>-->
+<!--</div>-->
+<!--</div>-->
+
+<nav id="jobs">
+  <% @jobs.each do |job| %>
+    <div class="job">
+      <div class="icon">
+        <img class="company-icon" src="https://media.glassdoor.com/sqls/376439/inflection-squarelogo.png" alt="company1"/>
+
+        <p class="posting-date"> <%= job.posted_date %> </p>
+      </div>
+      <div class="job-info">
+        <a class="job-title"
+           onclick="reload_iframe('<%= job.link_to_original %>');"
+           href="#"><%= job.title %> </a>
+
+        <p class="company-name"> <%= job.company_name %> </p>
+
+        <p class="description">
+          Ruby on Rails, Rspec, Sinatra, Elastic Search, Mysql, Resque, Chef, Capistrano, AWS. Our… and Develop
+          the right solutions for their backend systems starting from broadly defined problem statements
+        </p>
+
+        <p class="location"> <%= job.location %> </p>
+      </div>
     </div>
-</div>
+  <% end %>
+</nav>
+<main>
+
+  <iframe id="embedded_page"
+          src="http://www.indeed.com/cmp/CVirtual/jobs/Technical-Lead-e5acf165c5428482?sjdu=QwrRXKrqZ3CNX5W-O9jEvUzVNu4SdAfeVRWoZazBs02jKDJpx0NorygEZ6KNI6aclIOduEuDksGBJHGYTTplkA"
+          onload="window.top.scrollTo(0,0);">
+  </iframe>
+</main>
