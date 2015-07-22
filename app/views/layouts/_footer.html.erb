@@ -1,2 +1,8 @@
 <footer class="page-footer">
+  <div class="footer-text">
+    We search all the job sites so you don't have to.
+  </div>
+  <% if !user_signed_in? %>
+    <%= render 'users/shared/links' %>
+  <% end %>
 </footer>

@@ -12,21 +12,12 @@
  *
  *= require_tree .
  *= require_self
- */
-body {
-  display: flex;
-  flex-direction: column;
-}
-/*
-#content_wrapper {
-  margin: 0 auto;
-}
 */
 
 #home-page {
-  background: url("http://p1.pichost.me/i/34/1571726.jpg") no-repeat bottom;
-  padding: 400px;
-  width: 100%;
+  background: url("http://p1.pichost.me/i/34/1571726.jpg") no-repeat bottom center;
+  padding: 250px;
+  height: 100%;
   background-position: fixed;
 }
 
@@ -34,7 +25,7 @@ body {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:100px;
+   height:75px;
    width:100%;
 }
 
@@ -62,21 +53,40 @@ footer{
 }
 
 #github-signin-button {
+  background-color: #77AD35 !important;
   float: right;
+  bottom: 25px;
+  right: 10px;
+}
+
+.github-signin {
+  color: white;
 }
 
 .waves-effect.waves-light.btn {
-  float: right;
+  background-color: #1A6B5B;
 }
 
 #search {
   float: right;
 }
 
-/*
 .bootjob-button {
   float: left;
-  margin-left: -350px;
-  background-color: white;
+  margin-left: -250px;
+  margin-top: -100px;
 }
-*/
+
+.input-field {
+  float: right;
+  margin-right: -200px;
+}
+
+#steve-jobs {
+  width: 300px;
+}
+
+.footer-text {
+  color: white;
+  left: 20px;
+}

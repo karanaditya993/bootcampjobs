@@ -4,11 +4,7 @@ class JobsController < ApplicationController
       @jobs = Job.all
     elsif params[:search]
       @jobs = Job.search(params[:search]).order('created_at DESC')
-      p "*" * 100
-      p @jobs
-      p "*" * 100
     else
-      puts "NOOOO"
     end
   end
 
