@@ -31,7 +31,7 @@ def scrape_glassdoor(query, location)
     begin
       icon=page.css("#JobScopeWrapper-#{index} img")[0]['src']
     rescue
-      icon=""
+      icon="http://devbootcamp.com/assets/img/devbootcamp-logo2x.png"
     end
 
     puts index
@@ -39,11 +39,13 @@ def scrape_glassdoor(query, location)
     puts posted_date
     puts location
     puts description
+
     puts "*" * 50 + "Link to original"
     puts link_to_original
 
     Job.create(:title => title,
                :location => location,
+               :icon => icon,
                :description => description,
                :company_name => company_name,
                :link_to_original => link_to_original,

@@ -31,6 +31,9 @@ def scrape_github(query, location)
     rescue
       next
     end
+
+    icon="http://devbootcamp.com/assets/img/devbootcamp-logo2x.png"
+
     x += 1
     puts "*" * 50
 
@@ -40,6 +43,7 @@ def scrape_github(query, location)
 
     Job.create(:title => title,
                :location => location,
+               :icon => icon,
                :description => description,
                :company_name => company_name,
                :link_to_original => link_to_original,

@@ -26,8 +26,11 @@ def scrape_indeed(query, location)
       puts "Posted Date: #{posted_date}"
 
       link_to_original = base_url + job.css("a")[0]['href']
+      icon="http://devbootcamp.com/assets/img/devbootcamp-logo2x.png"
+
       # Job.create(:title => title,
       #            :location => location,
+      #            :icon => icon,
       #            :description => description,
       #            :company_name => company_name,
       #            :link_to_original => link_to_original,
