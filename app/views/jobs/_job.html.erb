@@ -1,18 +1,14 @@
 <div id="job-description">
     <% @jobs.each do |job| %>
-    <!--     <h1><%= job.title %></h1>
-    <h2>Location</h2>
-    <p><%= job.location %></p>
-
-    <h2>Description</h2>
-    <p><%= job.description %></p>
-
-    <h2>Company Name</h2>
-    <p><%= job.company_name %></p>
-    -->
-    <p>
-      <a href="<%= job.link_to_original %>"><%= job.title %></a>
-    </p>
+    <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+            <span class="card-title"><%= job.title %></span>
+        </div>
+        <div class="card-action">
+            <a href="<%= job.link_to_original %>">Link To Original Site</a>
+            <p><%= job.location %>
+            <%= job.company_name %></p>
+        </div>
+    </div>
     <% end %>
-
 </div>
