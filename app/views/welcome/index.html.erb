@@ -1,21 +1,28 @@
 <section id="home-page">
-  <div class="bootjob-button">
-  <span>
-    <h1>
-    </h1>
-  </span>
-  </div>
-  <div class="search-field">
-    <div class="input-field">
-      <%= form_tag(jobs_path, :method => 'get', id: "search") do %>
-        <%= text_field_tag :search, params[:search], placeholder: 'Search Jobs', style: "color:white;" %>
-        <%= submit_tag "", :id => 'Submit', :style => "display: none;" %>
-      <% end %>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+      <div class="welcome-message">
+        <h1 class="valign">Boot Jobs</h1>
+        <h5>We search all the job sites so you don't have to.</h5>
+      </div>
+
+      <div class="row">
+         <div class="input-field">
+         <%= form_tag(jobs_path, :method => 'get', id: "search") do %>
+           <%= text_field_tag :search, params[:search], class: 'validate', placeholder: 'Rails, Javascript, Front End, Designer.....', style: "color:white;" %>
+           <%= submit_tag "", :id => 'Submit', :style => "display: none;" %>
+         <% end %>
+         </div>
+      </div>   
+      </div>
     </div>
-  </div>
-  <div class="skills-button">
-    <p><%= link_to("See Your Skills", user_skills_path(@user.id), class: "waves-effect waves-light btn") %></p>
-    <p><%= link_to("Customize Your Profile!", new_user_skill_path(@user.id), class: "waves-effect waves-light btn") %></p>
-  </div>
+  </div>    
 </section>
 
+
+
+<!--   <div class="skills-button">
+    <p><%#= link_to("See Your Skills", user_skills_path(@user.id), class: "waves-effect waves-light btn") %></p>
+    <p><%#= link_to("Customize Your Profile!", new_user_skill_path(@user.id), class: "waves-effect waves-light btn") %></p>
+  </div> -->

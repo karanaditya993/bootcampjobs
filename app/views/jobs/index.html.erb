@@ -1,15 +1,15 @@
 <div class="container">
     <div class="col s12">
         <div class="row">
-                <%= form_tag(jobs_path, :method => 'get', id: "search") do %>
-                    <%= text_field_tag :search, params[:search], placeholder: 'Search Jobs', style: "color:black;" %>
-                    <%= submit_tag "", :id => 'Submit', :style => "display: none;" %>
-                <% end %>
-                <% if @jobs.present? && !params[:search].empty?%>
-                    <%= render partial: 'job', locals: {jobs: @jobs} %>
-                <% else %>
-                    <p>There are no jobs containing the term(s) <%= params[:search] %>.</p>
-                <% end %>
+                <%#=# form_tag(jobs_path, :method => 'get', id: "search") do %>
+                    <%#= text_field_tag :search, params[:search], placeholder: 'Search Jobs', style: "color:black;" %>
+                    <%#= submit_tag "", :id => 'Submit', :style => "display: none;" %>
+                <%# end %>
+                <%# if @jobs.present? && !params[:search].empty?%>
+                    <%#= render partial: 'job', locals: {jobs: @jobs} %>
+                <%# else %>
+                   <!-- <p>There are no jobs containing the term(s) <%#= params[:search] %>.</p> -->
+                <%# end %>
             <div class="input-field col s12">
             </div>
         </div>
@@ -17,11 +17,19 @@
         <div class="card blue-grey darken-1">
             <div class="card-content white-text">
                 <span class="card-title"><%= job.title %></span>
+                <span class="card-title-left"><h5><%= job.company_name %></h5></span>
+                <hr>
+                <br/>
+                <div>
+                    <p>
+                        <%= job.description %>
+                    </p>
+                </div>
             </div>
             <div class="card-action">
                 <a href="<%= job.link_to_original %>">Link To Original Site</a>
-                <p><%= job.location %>
-                <%= job.company_name %></p>
+                <h6><%= job.location %></h6>
+                <i class="fa fa-star"></i>
             </div>
         </div>
 <%end%>
