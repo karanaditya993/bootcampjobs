@@ -10,10 +10,13 @@ class SkillsController < ApplicationController
   end
 
   def create
-    @skill = Skill.where(skills: skill_params).first_or_create
+    @skill = Skill.create(skill_params)
     @user_skill = UserSkill.new(user_id: current_user.id, skill_id: @skill.id)
-    if @skill.save && @user_skill.save
-      redirect_to user_skill_path(@skill, @user_skill)
+    if request.xhr?
+      p "*" * 100
+      @skill.save && @user_skill.save
+      (render partial: 'show', layout: false, locals: {skill: @skill}).to_json
+      # redirect_to user_skill_path(@skill, @user_skill)
     else
       render 'new'
     end

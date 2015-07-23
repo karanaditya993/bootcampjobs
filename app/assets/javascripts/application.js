@@ -16,6 +16,7 @@
 //= require_tree .
 $(document).on("page:change", function() {
   githubFadeOut();
+  addSkill();
 });
 
 var githubFadeOut = function(){
@@ -23,4 +24,30 @@ var githubFadeOut = function(){
     setTimeout(function(){ event }, 1000)
     $('#github-signin-button').fadeOut();
   });
+}
+
+var addSkill = function(){
+  $('form').on("submit", function(event){
+    event.preventDefault();
+    console.log("Clicked!");
+
+  var path = $(this).attr('action')
+  var method = $(this).attr('method')
+  var content = $(this).serialize();
+
+  var request = $.ajax({
+    url: path,
+    type: method,
+    data: content
+  })
+  request.done(function(response){
+    console.log("Succes");
+    console.log(response);
+    $('body').append(response);
+  });
+  request.fail(function(response){
+    console.log("Fail");
+    console.log(response);
+  });
+})
 }
