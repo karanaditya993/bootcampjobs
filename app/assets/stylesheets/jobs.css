@@ -1,0 +1,91 @@
+
+* {
+  /*border: 1px solid red;*/
+}
+
+#embedded_page {
+  display: inline-block;
+  position: absolute;
+  left: 540px;
+  top: 120px;
+  width: 50em;
+  height: 1200px;
+  background-color: #F9F9F9;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+nav#jobs {
+  width: 480px;
+  height: 1000px;
+  overflow: scroll;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#boot-logo {
+  height: 100px;
+}
+
+.job {
+  padding: 10px;
+  height: 100px;
+  /*background-color: #E1E8DA;*/
+  width: 480px;
+  display: flex;
+  flex-flow: row;
+  border-top: solid 1px #C1C1C1;
+  border-bottom: solid 1px #C1C1C1;
+
+}
+
+.job-info {
+  width: 375px;
+  left: 90px;
+  padding-left: 1em;
+
+}
+
+.job-title {
+  font-family: 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
+  font-size: 18px;
+  color: #003399;
+  padding-bottom: 3px;
+
+}
+
+.company-name {
+  font-size: 14px;
+  font-family: 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
+
+}
+
+.description {
+  font-size: 11px;
+  . margin : 3 px;
+  max-lines: 3;
+  color: #666666;
+
+}
+
+.posting-date {
+  font-size: 12px;
+  text-align: center;
+  color: #505050;
+  width: 80px;
+}
+
+.company-icon {
+  width: 70px;
+  height: 70px;
+  padding: 3px;
+  border: 1px solid grey;
+
+}
+
+.icon {
+  . width : 120 px;
+}

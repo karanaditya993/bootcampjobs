@@ -1,7 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
 require_relative 'scrape_github.rb'
-require_relative 'scrape_glassdoor.rb'
 require_relative 'scrape_indeed.rb'
 
 
@@ -31,7 +30,7 @@ def scrape_job_listings
     queries.each do |query|
       scrape_indeed(query, location)
       scrape_github(query, location)
-      scrape_glassdoor(query, location)
+     # scrape_glassdoor(query, location)
     end
   end
 end

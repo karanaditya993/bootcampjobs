@@ -1,31 +1,21 @@
 /* Styles for Boot Jobs */
 
-body{
-  margin:0;
-  padding:0;
-  height:100%;
-}
+//#home-page {
+//  background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/San-Francisco-Wallpaper-25.jpg") ;
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//    background-position: center center;
+//    padding: 350px;
+//margin-left: -5em;
+//}
 
-#home-page {
-  background: url("https://download.unsplash.com/40/lUUnN7VGSoWZ3noefeH7_Baker%20Beach-12.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 450px;
-}
-
-.home-button{
+.home-button {
   margin-top: 8px;
   margin-left: 8px;
 }
 
-.input-field {
-  float: right;
-  right: -250px;
-}
-
 .gravatar {
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .welcome-message {
@@ -37,46 +27,433 @@ body{
   font-family: 'Montserrat';
 }
 
-.nav-wrapper {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  position: fixed;
-  background-color: #8C4646;
-}
-
+//.nav-wrapper {
+//  //position: fixed;
+//  background-color: #333333;
+//  height: 75px;
+//  width: 100%;
+//
+//}
 
 #github-signin-button {
   background-color: #588C7E !important;
   float: right;
   bottom: 25px;
   right: 10px;
-  top: 10px;
 }
 
 .github-signin {
   color: white;
-  margin-top: 100px;
 }
 
-.footer-text {
-  left:0px;
-  bottom:0px;
-  width:100%;
-  position: fixed;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+//#home-page {
+//  background: url("https://download.unsplash.com/40/lUUnN7VGSoWZ3noefeH7_Baker%20Beach-12.jpg");
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//  background-position: center center;
+//  padding: 450px;
+//}
+
+//* {
+/*border: 1px solid red;*/
+//}
+
+//THis is the home page css
+//#sf {
+//  position: absolute;
+//  left: -70px;
+//  top: -31px;
+//  width: 1570px;
+//  height: 981px;
+//}
+//#ny {
+//  position: absolute;
+//  left: -70px;
+//  top: -31px;
+//  width: 1570px;
+//  height: 981px;
+//}
+//#cg {
+//  position: absolute;
+//  left: -70px;
+//  top: -31px;
+//  width: 1570px;
+//  height: 981px;
+//}
+#san-francisco_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1570px;
+  height: 981px;
+}
+#chicago_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1570px;
+  height: 981px;
+}
+#new-york_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1570px;
+  height: 981px;
+}
+
+.white-boot-box {
+  position: absolute;
+  left: 994px;
+  top: 116px;
+  width: 350px;
+  height: 74px;
+  font-family: 'FZLTTHK--GBK1-0', 'Lantinghei SC Heavy', 'Lantinghei SC';
+  font-style: normal;
+  font-size: 36px;
+  text-align: right;
+  display: flex;
+  flex-flow: row;
+}
+.white-boot-box-p2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 350px;
+  height: 74px;
+  font-family: 'FZLTTHK--GBK1-0', 'Lantinghei SC Heavy', 'Lantinghei SC';
+  font-style: normal;
+  font-size: 36px;
+  text-align: right;
+  display: flex;
+  flex-flow: row;
+}
+#boot-icon {
+  position: absolute;
+  left: 7px;
+  top: 9px;
+  width: 120px;
+  height: 56px;
+  z-index: 2;
+
+}
+
+#boot-text {
+  position: absolute;
+  left: 2px;
+  top: 12px;
+  width: 333px;
+  word-wrap: break-word;
+  z-index: 2;
+
+}
+
+#u6_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 360px;
   height: 50px;
-  overflow: hidden;
-  background-color: #8C4646;
-  opacity: 0.5;
-  -webkit-filter: blur(5px);
 }
 
-.user-skills-index {
-  margin-top: 200px;
+#tagline {
+  position: absolute;
+  left: 995px;
+  top: 190px;
+  width: 350px;
+  height: 40px;
+  opacity: 0.899999976158142;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#tagline-p2 {
+  position: absolute;
+  left: 0px;
+  top: 75px;
+  width: 350px;
+  height: 40px;
+  opacity: 0.899999976158142;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#protractor_img {
+  position: absolute;
+  left: 350px;
+  top: 0px;
+  width: 997px;
+  height: 114px;
+}
+#white-block-prot-bkgnd {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1380px;
+  height: 129px;
+}
+.tag-text {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  width: 338px;
+  word-wrap: break-word;
 }
 
-.user-skills-new {
-  margin-top: 200px;
+#embedded_page {
+  display: inline-block;
+  position: absolute;
+  left: 540px;
+  top: 120px;
+  width: 50em;
+  height: 1200px;
+  background-color: #F9F9F9;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+nav#jobs {
+  width: 480px;
+  height: 1000px;
+  overflow: scroll;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#boot-logo {
+  height: 100px;
+}
+
+#u4_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 360px;
+  height: 84px;
+}
+
+//this is the jobs page css
+
+.job {
+  padding: 10px;
+  /*background-color: #E1E8DA;*/
+  width: 480px;
+  //display: flex;
+  //flex-flow: row;
+  border-top: solid 1px #C1C1C1;
+  border-bottom: solid 1px #C1C1C1;
+}
+
+#jobs-for-boots {
+  position: absolute;
+  left: 920px;
+  top: 806px;
+  width: 499px;
+  height: 56px;
+  font-family: 'Consolas', 'Consolas';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#jobs-for-boots-text {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 495px;
+  word-wrap: break-word;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.647058823529412);
+  -webkit-text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.647058823529412);
+  -moz-text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.647058823529412);
+}
+
+#u18_img {
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 128px;
+  height: 67px;
+}
+
+#blue-box_img {
+  position: absolute;
+  left: -7px;
+  top: 0px;
+  width: 395px;
+  height: 70px;
+}
+
+#smokey_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 395px;
+  height: 70px;
+}
+
+#city-menu {
+  position: absolute;
+  a-index: -1;
+  //border: 1px solid red;
+  width: 380px;
+  height: 150px;
+  left: 982px;
+  top: 633px;
+}
+
+
+#search {
+  position: absolute;
+  left: 1244px;
+  top: 579px;
+  width: 108px;
+  height: 47px;
+}
+#search-text {
+  position: absolute;
+  left: 6px;
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  top: 8px;
+  width: 102px;
+  word-wrap: break-word;
+}
+#san-francisco {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 375px;
+  height: 50px;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+#san-francisco-text {
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  top: 10px;
+  width: 371px;
+  word-wrap: break-word;
+  font-size: 24px;
+}
+#chicago {
+  position: absolute;
+  left: 0px;
+  top: 51px;
+  width: 0px;
+  height: 50px;
+}
+
+#chicago-text {
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  left: 0px;
+  top: 12px;
+  width: 371px;
+  word-wrap: break-word;
+}
+#new-york {
+  position: absolute;
+  left: 0px;
+  top: 102px;
+  width: 375px;
+  height: 50px;
+  color: #FFFFFF;
+}
+
+#new-york-text {
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  top: 10px;
+  width: 371px;
+  word-wrap: break-word;
+  font-size: 24px;
+}
+#bottom-bar {
+  position: absolute;
+  left: 0px;
+  top: 876px;
+  width: 1500px;
+  height: 104px;
+  color: #FFFFFF;
+  background-color: #303765;
+  text-align: left;
+}
+#bottom-bar-text {
+  position: absolute;
+  left: 90px;
+  top: 41px;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.job {
+  padding: 10px;
+  /*background-color: #E1E8DA;*/
+  width: 480px;
+  display: flex;
+  flex-flow: row;
+  border-top: solid 1px #C1C1C1;
+  border-bottom: solid 1px #C1C1C1;
+}
+
+.job-info {
+  width: 375px;
+  left: 90px;
+  padding-left: 1em;
+
+}
+
+.job-title {
+  font-family: 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
+  font-size: 18px;
+  color: #003399;
+  padding-bottom: 3px;
+
+}
+
+.company-name {
+  font-size: 14px;
+  font-family: 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
+
+}
+
+.description {
+  font-size: 11px;
+  margin: 3px;
+  max-lines: 3;
+  color: #666666;
+
+}
+
+.posting-date {
+  font-size: 12px;
+  text-align: center;
+  color: #505050;
+  width: 80px;
+}
+
+.company-icon {
+  width: 70px;
+  height: 70px;
+  padding: 3px;
+  border: 1px solid grey;
+
+}
+
+.icon {
+  width: 120px;
 }

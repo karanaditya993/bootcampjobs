@@ -1,15 +1,87 @@
-<section id="home-page">
-  <div class="container">
-      <div class="row">
-         <div class="input-field">
-           <div class="skills-button">
-            <p><%= link_to("Customize Your Profile!", new_user_skill_path(@user.id), class: "waves-effect waves-light btn") %></p>
-          </div>
-         </div>
+<!--<section id="home-page">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="input-field">-->
+<!--<div class="skills-button">-->
+<!--<p><%#= link_to("Customize Your Profile!", new_user_skill_path(@user.id), class: "waves-effect waves-light btn") %></p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+
+<div id="sf">
+  <%= image_tag("san-francisco.jpg", :id => "san-francisco_img") %>
+</div>
+<div id="cg">
+  <%= image_tag("chicago.jpg", :id => "chicago_img") %>
+</div>
+<div id="ny">
+  <%= image_tag("new-york.png", :id => "new-york_img") %>
+</div>
+<nav id="box-of-controls">
+  <div class="white-boot-box">
+    <%= image_tag("white-block.png", :id => "u4_img", :class => "img ") %>
+    <%= image_tag("boot.png", :id => "boot-icon", :class => "img ") %>
+    <div id="boot-text">
+      <p>
+        <span style="font-family:'FZLTTHK--GBK1-0', 'Lantinghei SC Heavy', 'Lantinghei SC';font-weight:900;">Boot</span><span style="font-family:'FZLTZHK--GBK1-0', 'Lantinghei SC Demibold', 'Lantinghei SC'; font-weight: 700;"> Jobs</span>
+      </p>
+    </div>
+  </div>
+  <div id="tagline">
+    <%= image_tag("u6.png", :id => "u6_img", :class => "img ") %>
+
+    <div class="tag-text">
+      <p><span> Because it's time to find a job. </span></p>
+    </div>
+  </div>
+
+  <div id="search" class="ax_shape">
+   <%= image_tag("red-box.png", :id => "u18_img") %>
+    <!--<%= link_to "search", jobs_path,  id: "search_text" %>-->
+
+    <!--<div id="search-text" class="text">-->
+      <a href="/jobs"><span id="search-text">search</span></a>
+    <!--</div>-->
+  </div>
+  <div id="city-menu">
+
+
+    <div id="san-francisco" class="ax_shape">
+      <%= image_tag("blue-box.png", :id => "blue-box_img") %>
+
+      <div id="san-francisco-text" class="text">
+        <p><span>San Francisco</span></p>
       </div>
+    </div>
+    <div id="chicago" class="ax_shape">
+      <%= image_tag("smokey-box.png", :id => "smokey_img") %>
+
+      <div id="chicago-text" class="text">
+        <p><span>Chicago</span></p>
+      </div>
+    </div>
+    <div id="new-york" class="ax_shape">
+      <%= image_tag("smokey-box.png", :id => "smokey_img") %>
+      <div id="new-york-text" class="text">
+        <p><span>New York</span></p>
       </div>
     </div>
   </div>
-</section>
-
-
+  <div id="jobs-for-boots">
+    <div id="jobs-for-boots-text" class="text">
+      <p><span>{:jobs_just_for =&gt; boots}</span></p>
+    </div>
+  </div>
+  <div id="bottom-bar" class="ax_shape">
+    <!--<img id="u10_img" class="img " src="images/page_3/u10.png">-->
+    <!-- Unnamed () -->
+    <div id="bottom-bar-text" class="text">
+      <p> We search all the jobs sites so you don't have to. </p>
+    </div>
+  </div>
+</nav>
