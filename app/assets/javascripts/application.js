@@ -50,8 +50,14 @@ var addSkill = function () {
     })
 };
 
-function reload_iframe(loc) {
+function reload_iframe(element, loc) {
     document.getElementById('embedded_page').src = loc;
+    pop = $(element).closest('.job');
+    marker = $('#selected_job');
+    marker.offset(pop.offset());
+    marker.height(pop.height()+ 15);
+    marker.css('width', '550px');
+
 //            document.getElementById('iframe_handle').style.top = pos;
 //            document.getElementById('iframe_handle').style.backgroundColor = frameHandleColor;
 }
@@ -66,6 +72,10 @@ $(document).ready(function () {
     $('#san-francisco_img').show();
     $('#chicago_img').hide();
     $('#new-york_img').hide();
+
+    //$('#jobs').on("scroll", function(event) {
+    //    myvalues = event;
+    //}
 
     $('#city-menu').on("click", function (event) {
         event.preventDefault();
