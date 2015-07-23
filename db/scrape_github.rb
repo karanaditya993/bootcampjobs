@@ -35,18 +35,16 @@ def scrape_github(query, location)
     icon="http://devbootcamp.com/assets/img/devbootcamp-logo2x.png"
 
     x += 1
-    puts "*" * 50
 
-    puts "Title: #{title}"
-    puts "Location: #{location}"
-    puts "Posted Date: #{posted_date}"
+    if Job.where(:title => title,
+                  :description => description).empty?
 
-    Job.create(:title => title,
-               :location => location,
-               :icon => icon,
-               :description => description,
-               :company_name => company_name,
-               :link_to_original => link_to_original,
-               :posted_date => posted_date)
+      Job.create(:title => title,
+                  :icon => icon,
+                  :location => location,
+                  :description => description,
+                  :company_name => company_name,
+                  :link_to_original => link_to_original)
+    end
   end
 end
