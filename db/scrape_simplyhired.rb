@@ -14,10 +14,10 @@ puts jobs
 
 
 
- # doc = Nokogiri::HTML(open(query_url, :allow_redirections => :safe))
-  loop do #until there's no more pages of job listings
-
-  end
+doc = Nokogiri::HTML(open(query_url, :allow_redirections => :safe))
+ #  loop do #until there's no more pages of job listings
+ #
+ #  end
   doc.css("a").each do |link|
     posting_urls << link['href']
   end
@@ -31,11 +31,12 @@ puts jobs
     # number_jobs = results.length
     # number_jobs.times do |index|
     #   result = results[index]
-    job[:title] = page.css('#smb_job_title').text
-    job[:location] = page.css("span.location strong").text
+    puts "*" * 50
+    puts  job[:title] = page.css('#smb_job_title').text
+    puts job[:location] = page.css("span.location strong").text
     job[:posted_date] = page.css("div#smb_job_posted_date strong strong").text
     job[:description] = page.css("div#c_job_description pre").text
-    job[:company_name] = page.css("div#smb_job_company").text
+    puts  job[:company_name] = page.css("div#smb_job_company").text
     job[:link_to_original] = base_url + page.css("a")[0]['href']
 
     jobs << job
