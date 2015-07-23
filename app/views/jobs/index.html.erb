@@ -35,7 +35,27 @@
 <!--<%#end%>-->
 <!--</div>-->
 <!--</div>-->
+<div id="white-boot-box-p2">
+  <%= image_tag("white-block.png", :id => "u4_img", :class => "img ") %>
+  <%= image_tag("boot.png", :id => "boot-icon", :class => "img ") %>
+  <div id="boot-text">
+    <p>
+      <span style="font-family:'FZLTTHK--GBK1-0', 'Lantinghei SC Heavy', 'Lantinghei SC';font-weight:900;">Boot</span><span style="font-family:'FZLTZHK--GBK1-0', 'Lantinghei SC Demibold', 'Lantinghei SC'; font-weight: 700;"> Jobs</span>
+    </p>
+  </div>
+  <%= image_tag("white-block.png", :id => "white-block-prot-bkgnd") %>
 
+  <%= image_tag("protractor.png", :id => "protractor_img") %>
+
+</div>
+<div id="tagline-p2">
+  <%= image_tag("u6.png", :id => "u6_img", :class => "img ") %>
+
+  <div class="tag-text">
+    <p><span> Because it's time to find a job. </span></p>
+  </div>
+
+</div>
 <nav id="jobs">
   <% @jobs.each do |job| %>
     <div class="job">
