@@ -45,6 +45,10 @@ def scrape_github(query, location)
                   :description => description,
                   :company_name => company_name,
                   :link_to_original => link_to_original)
+      puts "*" * 50
+      puts "title: #{title}"
+      puts "location: #{location}"
+      puts "company_name: #{company_name}"
     end
   end
 end

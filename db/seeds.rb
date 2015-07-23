@@ -1,7 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
 require_relative 'scrape_github.rb'
-require_relative 'scrape_glassdoor.rb'
 require_relative 'scrape_indeed.rb'
 
 

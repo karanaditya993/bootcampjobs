@@ -18,6 +18,10 @@ pages_printed = 0
 
       link_to_original = base_url + job.css("a")[0]['href']
       icon="http://devbootcamp.com/assets/img/devbootcamp-logo2x.png"
+      puts "*" * 50
+      puts "Title: #{title}"
+      puts "Location: #{location}"
+      puts "Posted Date: #{posted_date}"
 
       if Job.where(:title => title, :description => description).empty?
 
@@ -41,6 +45,7 @@ pages_printed = 0
 
     next_page_url= pages[num_pages-1]['href'] #get the "Next" link
     link_to_next = base_url + next_page_url
+    puts link_to_next
 
     page = Nokogiri::HTML(open(link_to_next))
   end
