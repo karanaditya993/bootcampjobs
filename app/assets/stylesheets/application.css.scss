@@ -1,5 +1,6 @@
 /* Styles for Boot Jobs */
 
+<<<<<<< HEAD
 
 #home-page {
   background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/San-Francisco-Wallpaper-25.jpg") no-repeat bottom center;
@@ -45,40 +46,20 @@
   color: white;
 }
 
-.footer-text {
-  color: white;
-  left: 20px;
+
+body{
+  margin:0;
+  padding:0;
+  height:100%;
 }
 
-.card-title-left {
-  float: right;
-}
-
-.card-action h6 {
-  color: white;
-}
-
-.card-action > i  {
-  float: right;
-  padding-bottom: 20px;
-  padding-left: 20px;
-}
-
-.fa.fa-star {
-  color: white;
-  font-size: 50px;
-}
-
-.page-footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:75px;
-   width:100%;
-}
-
-footer{
-  background-color: #000000 !important;
+#home-page {
+  background: url("https://download.unsplash.com/40/lUUnN7VGSoWZ3noefeH7_Baker%20Beach-12.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 450px;
+>>>>>>> 9cd63e373d00414a64c03badd797fc9968c78c49
 }
 
 
