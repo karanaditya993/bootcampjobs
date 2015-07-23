@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title> think.build </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="job_listing.css">
+  <link rel="stylesheet" type="text/css" href="html5-boilerplate_v5/css/normalize.css">
+
+  <SCRIPT LANGUAGE="JavaScript">
+      function reload_iframe(loc, pos, frameHandleColor){
+          document.getElementById('embedded_page').src = loc;
+          document.getElementById('iframe_handle').style.top=pos;
+          document.getElementById('iframe_handle').style.backgroundColor = frameHandleColor;
+      }
+      function new_iframe(loc){
+          document.getElementById('embedded_page').src = loc;
+      }
+  </script>https://github.com/sf-dragonflies-2015/phase-2-guide
+
+</head>
+<div id="sub-title" >
+  --a project site for Mike Farr
+</div>
+
+<div id="iframe_handle">
+</div>
+
+<img id="site-title" src="imgs/site/think_build.png" alt="think.build" />
+
+<nav id="nav-style">
+  <div id="nav-button-1">
+    <a onclick="reload_iframe('architecture/architecture-1.html','140px','#F9F9F9');" href="#"><br>Architecture</a>
+  </div>
+  <div id="nav-button-2">
+    <a onclick="reload_iframe('film/film-1.html','265px','#F9F9F9');" href="#"><br>Film</a>
+  </div>
+  <div id="nav-button-3">
+    <a onclick="reload_iframe('music/music-1.html','385px', '#F9F9F9');" href="#"><br>Music</a>
+  </div>
+  <div id="nav-button-4">
+    <!--<a onclick="reload_iframe('Code/Ruby_Cheat_Sheet/ruby_cheat_sheet.html','505px');" href="#"><br>Code</a>-->
+      <a onclick="reload_iframe('Code/BlackJack/BlackJack.html','505px','#55AA55');" href="#"><br>Code</a>
+  </div >
+  <div id="nav-button-5">
+    <a onclick="reload_iframe('blog/blog-1.html','625px', '#F9F9F9');" href="#"><br>Blog</a>
+  </div>
+
+</nav>
+<main>
+  <iframe id="embedded_page" src="https://uscareers-solarwinds.icims.com/jobs/5042/software-engineer%2c-growth/job?hub=7&mode=job&iis=Job+Board+-+Indeed.com&iisn=Indeed.com&mobile=false&width=840&height=500&bga=true&needsRedirect=false&jan1offset=-480&jun1offset=-420"
+   onload="window.top.scrollTo(0,0);">
+  </iframe>
+</main>

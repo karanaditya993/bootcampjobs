@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="html5-boilerplate_v5/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="job_listing.css">
+</head>
+<body>
+<nav id="jobs">
+    <div class="job">
+        <div class="icon">
+            <img class="company-icon" src="assets/icon1.png" alt="company1"/>
+
+            <p class="posting-date"> 15 days ago </p>
+        </div>
+        <div class="job-info">
+            <a class="job-title" onclick="reload_iframe('https://uscareers-solarwinds.icims.com/jobs/5042/software-engineer%2c-growth/job?hub=7&mode=job&iis=Job+Board+-+Indeed.com&iisn=Indeed.com&mobile=false&width=840&height=500&bga=true&needsRedirect=false&jan1offset=-480&jun1offset=-420');" href="#">Senior Ruby on Rails Developer</a>
+
+            <p class="company-name"> Bug Crowd </p>
+
+            <p class="description">
+                Ruby on Rails, Rspec, Sinatra, Elastic Search, Mysql, Resque, Chef, Capistrano, AWS. Our… and Develop
+                the right solutions for their backend systems starting from broadly defined problem statements
+            </p>
+
+            <p class="location"> San Francisco, CA </p>
+        </div>
+    </div>
+</nav>
+
+</body>
+<SCRIPT LANGUAGE="JavaScript">
+    function reload_iframe(loc, pos, frameHandleColor){
+        document.getElementById('embedded_page').src = loc;
+        document.getElementById('iframe_handle').style.top=pos;
+        document.getElementById('iframe_handle').style.backgroundColor = frameHandleColor;
+    }
+    function new_iframe(loc){
+        document.getElementById('embedded_page').src = loc;
+    }
+</script>
+</html>
