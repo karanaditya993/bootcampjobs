@@ -3,6 +3,7 @@ require 'open-uri'
 require_relative 'scrape_github.rb'
 require_relative 'scrape_glassdoor.rb'
 require_relative 'scrape_indeed.rb'
+require_relative 'scrape_careerbuilder.rb'
 
 
 # Skill.create(title: "Ruby")
@@ -32,6 +33,7 @@ def scrape_job_listings
       scrape_indeed(query, location)
       scrape_github(query, location)
       scrape_glassdoor(query, location)
+      scrape_careerbuilder(query, location)
     end
   end
 end
